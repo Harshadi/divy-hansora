@@ -174,11 +174,33 @@
         object-fit: contain;
         margin-bottom: 10px;
       }
+      .top-bar {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        color: white;
+        font-size: 1rem;
+        justify-content: center;
+      }
+
+      .doctor-logo {
+        width: 150px; /* Adjust the size of the logo */
+        height: 150px; /* Adjust the size of the logo */
+        border-radius: 50%; /* Makes the image circular */
+        margin-right: 15px; /* Space between logo and text */
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Dr. Divy Hansora</h1>
+      <div class="top-bar">
+        <img
+          src="./doctor.jpg"
+          alt="Dr. Divy Hansora"
+          class="doctor-logo"
+        />
+        <h1>Dr. Divy Hansora</h1>
+      </div>
       <div class="contact-info">
         📧 drdivyhansora@gmail.com | 📞 +91 8169898955 | 📍 Mumbai, India
       </div>
@@ -251,7 +273,7 @@
               />
               <h3>Neurological Rehabilitation</h3>
             </div>
-              <p>
+            <p>
               Specialized therapy for patients with stroke, Parkinson's disease,
               spinal cord injuries, and other neurological disorders.
             </p>
@@ -265,7 +287,7 @@
               />
               <h3>Post-Surgical Rehab</h3>
             </div>
-              <p>
+            <p>
               Rehabilitation programs to speed up recovery following orthopedic
               surgeries such as knee, hip, or spinal procedures.
             </p>
